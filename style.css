@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#game {
+    text-align: center;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+}
+
+#instructions {
+    margin-top: 20px;
+}
+
+#instructions p {
+    font-size: 18px;
+}
