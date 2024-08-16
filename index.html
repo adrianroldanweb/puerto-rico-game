@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puerto Rico Municipality Game</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <style>
-        #map {
-            height: 600px;
-            width: 100%;
-        }
-        #info {
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div id="map"></div>
-    <div id="info">
-        <p>Find: <span id="municipio-name"></span></p>
-        <p>Time: <span id="timer">0.000</span> seconds</p>
-        <p id="message"></p>
-        <p>Total Time: <span id="total-time">0.000</span> seconds</p>
+    <h1 id="titulo">Localiza los Pueblos de Puerto Rico</h1>
+    <div class="mycontainer">
+        <div class="map-container">
+            <div id="map"></div>
+            <div id="info">
+                <!-- <p>Find: <span id="municipio-name"></span></p> -->
+                <b>
+                <p>Time: <span id="timer">0.000</span> seconds</p>
+                <p id="message"></p>
+                <p>Total Time: <span id="total-time">0.000</span> seconds</p>
+                </b>
+            </div>
+        </div>
+        <div class="text-container">
+            <h4 style="text-align: center;">Información sobre el Pueblo</h4>
+            <u><h1 style="text-align: center;"><span id="municipio-name"></span></h1></u>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem dolore est illum veritatis, explicabo aspernatur eos repudiandae. Pariatur vitae nisi debitis consequuntur, aperiam hic minima dolore a beatae dignissimos.</p> -->
+            <p><span id="municipio-description"></span></p>
+        </div>
     </div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+
