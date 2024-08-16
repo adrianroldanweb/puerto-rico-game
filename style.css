@@ -1,29 +1,52 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+body{
+    background-color: lightslategray;
+    overflow: hidden;
+    height: 100%;
+    margin: 10;
 }
 
-#game {
+#titulo{
+    background-color: #83bded;
+    border-style: solid;
+    border-color: black;
     text-align: center;
 }
 
 #map {
-    height: 500px;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    border: 2px solid #ccc;
+    margin-top: 10px;
+    height: 800px;
+    width: 60%px;
+    border-style: solid;
+    border-width: large;
+}
+#info {
+    margin-top: 1em;
+    border-style: solid;
+    border-width: large;
+    padding: 10px;
+    margin-top: 10px;
+    background-color:  #83bded;
+}
+#info p{
+    
+    font-size: 20px;
+}
+.mycontainer {
+    display: flex;
+    gap: 1em;
+}
+.map-container {
+    flex: 2;
+}
+.text-container {
+    margin-top: 10px;
+    flex: 1;
+    background-color: #83bded;
+    padding: 10px;
+    border-style: solid;
 }
 
-#instructions {
-    margin-top: 20px;
+.text-container p{
+    font-size: 30px;
 }
 
-#instructions p {
-    font-size: 18px;
-}
